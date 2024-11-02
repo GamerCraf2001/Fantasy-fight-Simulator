@@ -1,5 +1,10 @@
 # Fantasy fight Simulator
 
+## preview
+
+![preview](Preview/msedge_RBYUv3R4O9.png)
+[try it](https://gamercraf2001.github.io/Fantasy-fight-Simulator/)
+
 ## overview:
 
 This is a rough proof of concept, using a html app to build retro JRPG battle scene, including a mobile-friendly interface, gesture control, state switch function, attack animations, dynamic background, BGM and sound.
