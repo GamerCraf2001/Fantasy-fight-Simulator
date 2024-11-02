@@ -2,8 +2,10 @@
 
 ## preview
 
-![preview](Preview/msedge_RBYUv3R4O9.png)
-[try it](https://gamercraf2001.github.io/Fantasy-fight-Simulator/)
+![preview](preview/previewImg.png)
+
+
+## [try it](https://gamercraf2001.github.io/Fantasy-fight-Simulator/)
 
 ## overview:
 
