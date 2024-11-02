@@ -1,0 +1,162 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+    margin-left: auto;
+    margin-right: auto;
+    background-color: rgb(0, 0, 0);
+    -webkit-user-select: none; /* 禁止选中文字 */
+    user-select: none; /* 禁止选中文字 */
+}
+
+#fullScreenBut {
+    position: fixed;
+    top: 10px;
+    left: 10px;
+    background-color: rgba(175, 175, 175, 0.6);
+    /* color: white; */
+    padding:0px;
+    border: none;
+    min-width: 30px;
+    min-height: 30px;
+    /* 设置背景图居中 */
+    background-size: cover;
+    background-position: center;
+    z-index: 101;
+}
+
+#touchGuide {
+    position: absolute;
+    height: calc(min(500px, 30%)); 
+    aspect-ratio: 1; 
+    background-image: url(./assets/img/touch_guide.png);
+    background-size: cover; 
+    display: none; 
+    pointer-events: none;
+    opacity: 0.6; 
+    z-index: 1000;
+}
+
+#mainArea {
+    position: relative;
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    max-height: 75%;
+    background-size: cover;
+    background-position: center bottom;
+    background-repeat: no-repeat;
+}
+
+#enemyArea {
+    position: absolute;
+    left:10px;
+    bottom: 10px;
+    width: 50%;
+    height: 90%;
+    background-image: url(./assets/img/enemy.png);
+    background-repeat: no-repeat;
+    background-size: auto;
+    background-position: left;
+}
+
+#mainUI{
+    display: flex;
+    position: absolute;
+    bottom: 10px;
+    width: 100%;
+    background-color: lightskyblue;
+}
+
+#unitArea{
+    position:absolute;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+    gap: 0px;
+    bottom: 10%;
+    right:10px;
+    height: 40%;
+    overflow: visible;
+}
+
+.unitSprite{
+    position: relative;
+    aspect-ratio: 1;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: left;
+    width: 100%;
+    overflow: visible;
+}
+
+#UnitButs {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+    gap: 0px;
+    width: 100%;
+    max-height: 100%;
+}
+
+.unit {
+    min-height: 75px;
+    display: flex;
+    justify-content: left;
+    align-items: center;
+    overflow: visible;
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+}
+
+.unitMove{
+    height: 30%;
+    min-height: 30px;
+    min-width: 30px;
+    margin-top: -80px;
+    margin-left: 5%;
+    z-index: 1001;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.unitPotrait{
+    width: 50px;
+    height: 50px;
+    margin-left: -20px;
+}
+
+.unitName{
+    height: 50px;
+    width: 100%;
+    margin-right: 12px;
+}
+
+#menu {
+    display: flex;
+    justify-content: space-between;
+    background-color: rgb(0, 0, 0);
+    padding: 5px 0;
+}
+
+.menu-item {
+    flex: 1;
+    min-height: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    background-position: center;
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    margin-bottom: 0;
+}

@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en"></html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Fantasy Fight: Beyond Eternity</title>
+</head>
+<body>
+    <div id="fullScreenBut"></div>
+    <div id="touchGuide"></div>
+    <div id="mainArea">
+        <div id="enemyArea"></div>
+        <div id="unitArea">
+            <div class="unitSprite" id="unitSprite1"></div>
+            <div class="unitSprite" id="unitSprite2"></div>
+            <div class="unitSprite" id="unitSprite3"></div>
+            <div class="unitSprite" id="unitSprite4"></div>
+            <div class="unitSprite" id="unitSprite5"></div>
+            <div class="unitSprite" id="unitSprite6"></div>
+        </div>
+        <div id="mainUI">HUD</div>
+    </div>
+    <div id="UnitButs">
+        <div class="unit" id="unit1">
+            <div class = "unitMove" id="unitMove1"></div>
+            <div class = "unitPotrait" id="unitPotrait1"></div>
+            <div class = "unitName" id="unitName1"></div>
+        </div>
+        <div class="unit" id="unit2">
+            <div class = "unitMove" id="unitMove2"></div>
+            <div class = "unitPotrait" id="unitPotrait2"></div>
+            <div class = "unitName" id="unitName2"></div>
+        </div>
+        <div class="unit" id="unit3">
+            <div class = "unitMove" id="unitMove3"></div>
+            <div class = "unitPotrait" id="unitPotrait3"></div>
+            <div class = "unitName" id="unitName3"></div>
+        </div>
+        <div class="unit" id="unit4">
+            <div class = "unitMove" id="unitMove4"></div>
+            <div class = "unitPotrait" id="unitPotrait4"></div>
+            <div class = "unitName" id="unitName4"></div>
+        </div>
+        <div class="unit" id="unit5">
+            <div class = "unitMove" id="unitMove5"></div>
+            <div class = "unitPotrait" id="unitPotrait5"></div>
+            <div class = "unitName" id="unitName5"></div>
+        </div>
+        <div class="unit" id="unit6">
+            <div class = "unitMove" id="unitMove6"></div>
+            <div class = "unitPotrait" id="unitPotrait6"></div>
+            <div class = "unitName" id="unitName6"></div>
+        </div>
+    </div>
+    <div id="menu">
+        <div class="menu-item" id="menu_1">text_menu_1</div>
+        <div class="menu-item" id="menu_2">text_menu_2</div>
+        <div class="menu-item" id="menu_3">text_menu_3</div>
+        <div class="menu-item" id="menu_4">text_menu_4</div>
+    </div>
+    <audio id="bgm" src="./assets/music/bgm.ogg" loop></audio>
+</body>
+<script src="scripts\init.js"></script>
+<script src="scripts\gesture.js"></script>
+<script src="scripts\fullScreen.js"></script>
+<script src="script.js"></script>
+<script src="scripts\aspectRatio.js"></script>
+<script src="scripts\unitPlay.js"></script>
+</html>
