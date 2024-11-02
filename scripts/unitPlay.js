@@ -9,7 +9,7 @@ unitSprite1.style.border = 'none';
 
 const SE = document.createElement('audio');
 SE.id = 'se';
-SE.src = './assets/soundEffect/SE.WAV';
+SE.src = './assets/soundEffect/SE.wav';
 SE.loop = false;
 
 const moveDistance = document.getElementById('mainArea').offsetWidth / 4;
